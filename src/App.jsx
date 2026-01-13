@@ -44,43 +44,43 @@
 //   }
 
 //   return (
-//     <div className="w-full min-h-screen bg-gradient-to-b from-[#1a2229] to-black flex items-center justify-center p-4">
-//       <div className="w-full max-w-md bg-[#0d1014] border border-gray-700 rounded-2xl p-6 flex flex-col items-center gap-6 shadow-xl">
+    // <div className="w-full min-h-screen bg-gradient-to-b from-[#1a2229] to-black flex items-center justify-center p-4">
+    //   <div className="w-full max-w-md bg-[#0d1014] border border-gray-700 rounded-2xl p-6 flex flex-col items-center gap-6 shadow-xl">
 
-//         <h1 className="text-3xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text">
-//           Jkarni App
-//         </h1>
+    //     <h1 className="text-3xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text">
+    //       Jkarni App
+    //     </h1>
 
-//         <div className="text-center text-white text-sm break-all">
-//           <p>
-//             <span className="text-blue-400 font-medium">User Name:</span>{" "}
-//             {userName}
-//           </p>
-//           <p>
-//             <span className="text-blue-400 font-medium">User ID:</span>{" "}
-//             {userID}
-//           </p>
-//         </div>
+    //     <div className="text-center text-white text-sm break-all">
+    //       <p>
+    //         <span className="text-blue-400 font-medium">User Name:</span>{" "}
+    //         {userName}
+    //       </p>
+    //       <p>
+    //         <span className="text-blue-400 font-medium">User ID:</span>{" "}
+    //         {userID}
+    //       </p>
+    //     </div>
 
-//         <button
-//           onClick={() =>
-//             invite(ZegoUIKitPrebuilt.InvitationTypeVoiceCall)
-//           }
-//           className="w-[200px] py-3 rounded-xl bg-white text-black font-semibold hover:bg-gray-200 transition"
-//         >
-//           Voice Call
-//         </button>
+    //     <button
+    //       onClick={() =>
+    //         invite(ZegoUIKitPrebuilt.InvitationTypeVoiceCall)
+    //       }
+    //       className="w-[200px] py-3 rounded-xl bg-white text-black font-semibold hover:bg-gray-200 transition"
+    //     >
+    //       Voice Call
+    //     </button>
 
-//         <button
-//           onClick={() =>
-//             invite(ZegoUIKitPrebuilt.InvitationTypeVideoCall)
-//           }
-//           className="w-[200px] py-3 rounded-xl bg-white text-black font-semibold hover:bg-gray-200 transition"
-//         >
-//           Video Call
-//         </button>
-//       </div>
-//     </div>
+    //     <button
+    //       onClick={() =>
+    //         invite(ZegoUIKitPrebuilt.InvitationTypeVideoCall)
+    //       }
+    //       className="w-[200px] py-3 rounded-xl bg-white text-black font-semibold hover:bg-gray-200 transition"
+    //     >
+    //       Video Call
+    //     </button>
+    //   </div>
+    // </div>
 //   );
 // }
 
@@ -132,28 +132,41 @@ function App() {
   }
 
   return (
-    <div className="w-full min-h-screen bg-black flex items-center justify-center">
-      <div className="bg-gray-900 p-6 rounded-xl text-center text-white space-y-4">
+       <div className="w-full min-h-screen bg-gradient-to-b from-[#1a2229] to-black flex items-center justify-center p-4">
+      <div className="w-full max-w-md bg-[#0d1014] border border-gray-700 rounded-2xl p-6 flex flex-col items-center gap-6 shadow-xl">
 
-        <h1 className="text-2xl font-bold">VoiceApp</h1>
+        <h1 className="text-3xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text">
+          Jkarni App
+        </h1>
 
-        <p>User: {userName}</p>
-        <p>ID: {userID}</p>
+        <div className="text-center text-white text-sm break-all">
+          <p>
+            <span className="text-blue-400 font-medium">User Name:</span>{" "}
+            {userName}
+          </p>
+          <p>
+            <span className="text-blue-400 font-medium">User ID:</span>{" "}
+            {userID}
+          </p>
+        </div>
 
         <button
-          onClick={() => invite(ZegoUIKitPrebuilt.InvitationTypeVoiceCall)}
-          className="px-4 py-2 bg-white text-black rounded"
+          onClick={() =>
+            invite(ZegoUIKitPrebuilt.InvitationTypeVoiceCall)
+          }
+          className="w-[200px] py-3 rounded-xl bg-white text-black font-semibold hover:bg-gray-200 transition"
         >
           Voice Call
         </button>
 
         <button
-          onClick={() => invite(ZegoUIKitPrebuilt.InvitationTypeVideoCall)}
-          className="px-4 py-2 bg-white text-black rounded"
+          onClick={() =>
+            invite(ZegoUIKitPrebuilt.InvitationTypeVideoCall)
+          }
+          className="w-[200px] py-3 rounded-xl bg-white text-black font-semibold hover:bg-gray-200 transition"
         >
           Video Call
         </button>
-
       </div>
     </div>
   );
